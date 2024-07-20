@@ -5,13 +5,16 @@ public class triangle {
         System.out.println("enter any number");
         int row=sc.nextInt();
         int i,j,k;
-        for(i=row;i>=1;i--){
-            for(j=i;j>=1;j--){
-                System.out.print(j);
+        for(i=1;i<=row;i++){
+            for(j=2;j>=1;j--){
+
+                if(j<=row-1){
+                    System.out.print(j);
+                }else{
+                    System.out.print("*");
+                }
             }
-            for(k=1;k<=row;k++){
-                System.out.print(k);
-            }
+
             System.out.println(  );
         }
     }
